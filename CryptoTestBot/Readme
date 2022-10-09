@@ -1,0 +1,36 @@
+Final project
+
+Your task: to write and test a Telegram bot that will implement the following functionality:
+
+The bot returns the price for a certain amount of currency (euro, dollar or ruble).
+When writing a bot, you must use the pytelegrambotapi library.
+A person should send a message to the bot in the form <currency name whose price he wants to know> <currency name in which the price of the first currency is to be found> <number of the first currency>.
+Entering the /start or /help command will prompt the user for instructions on how to use the bot.
+When you enter the /values ​​command, information about all available currencies should be displayed in a readable form.
+To take the exchange rate, you need to use the API and send requests to it using the Requests library.
+To parse the received responses, use the JSON library.
+If the user makes a mistake (for example, an incorrect or non-existent currency is entered, or a number is entered incorrectly), throw a self-written APIException with the text explaining the error.
+The text of any error indicating the type of error should be sent to the user in messages.
+To send requests to the API, describe a class with a static get_price() method that takes three arguments: the name of the currency you want to know the price of - base, the name of the currency you want to know the price in - quote, the amount of the transferred currency - amount and returns desired amount in currency.
+Store the telegramm bot token in a special config (you can use a .py file).
+Hide all classes in the extensions.py file.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Контрольный проект
+
+Ваше задание: написать и протестировать Telegram-бота, в котором будет реализован следующий функционал:
+
+Бот возвращает цену на определённое количество валюты (евро, доллар или рубль).
+При написании бота необходимо использовать библиотеку pytelegrambotapi.
+Человек должен отправить сообщение боту в виде <имя валюты цену которой он хочет узнать> <имя валюты в которой надо узнать цену первой валюты> <количество первой валюты>.
+При вводе команды /start или /help пользователю выводятся инструкции по применению бота.
+При вводе команды /values должна выводиться информация о всех доступных валютах в читаемом виде.
+Для взятия курса валют необходимо использовать API и отправлять к нему запросы с помощью библиотеки Requests.
+Для парсинга полученных ответов использовать библиотеку JSON.
+При ошибке пользователя (например, введена неправильная или несуществующая валюта или неправильно введено число) вызывать собственно написанное исключение APIException с текстом пояснения ошибки.
+Текст любой ошибки с указанием типа ошибки должен отправляться пользователю в сообщения.
+Для отправки запросов к API описать класс со статическим методом get_price(), который принимает три аргумента: имя валюты, цену на которую надо узнать, — base, имя валюты, цену в которой надо узнать, — quote, количество переводимой валюты — amount и возвращает нужную сумму в валюте.
+Токен telegramm-бота хранить в специальном конфиге (можно использовать .py файл).
+Все классы спрятать в файле extensions.py.
+
