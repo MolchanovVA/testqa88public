@@ -1,0 +1,8 @@
+email = 'psevamtestrostelekom@gmail.com'
+password = 'Rfhfrfnbwf2020'
+valid_phone = '+79817375520'
+valid_login = 'Login999'
+valid_ls = '123456789012'
+long_phone = '7981737552020'
+short_phone = '798173755'
+not_valid_password = 'VbirfYfCtdtht'
